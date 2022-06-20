@@ -7,16 +7,16 @@ const { Routes } = require("discord-api-types/v9");
 const commands = [
   new SlashCommandBuilder()
     .setName("ping")
-    .setDescription("Replies with Pong"),
+    .setDescription("Replies with Pong!"),
   new SlashCommandBuilder()
     .setName("pong")
-    .setDescription("Replies with Ping"),
+    .setDescription("Replies with Ping!"),
   new SlashCommandBuilder()
     .setName("server")
-    .setDescription("Replies with server info"),
+    .setDescription("Replies with server info!"),
   new SlashCommandBuilder()
     .setName("user")
-    .setDescription("Replies with user infogit"),
+    .setDescription("Replies with user info!"),
 ].map((command) => command.toJSON());
 
 const rest = new REST({ version: "9" }).setToken(process.env.DISCORD_TOKEN);
